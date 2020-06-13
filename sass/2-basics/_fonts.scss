@@ -1,0 +1,24 @@
+.header-menu{
+    list-style: none;
+    a{
+        text-decoration: none;
+        color: $orange-brand-color;
+       &:hover{
+            color:$footer-grey-bg;
+            text-decoration: underline;
+       }
+    }
+}
+
+.header-banner{
+    color:white;
+    text-shadow: 1px 1px rgba(0,0,0,0.8);
+    h1{
+        font-family: 'PD-Bold';
+        letter-spacing: 4px;
+    }
+    h2{
+        font-family: 'R-Medium';
+       
+    }
+}

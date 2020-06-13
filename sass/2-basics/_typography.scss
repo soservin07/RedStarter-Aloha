@@ -1,0 +1,39 @@
+//base font for width 600px+
+$base-font:16px;
+$base-font-sm:14px;
+
+
+
+
+@font-face{
+    font-family:'PD-Bold';
+    src: url("../../fonts/PlayfairDisplay-Bold.otf") format('truetype');
+}
+@font-face{
+    font-family:'PD-BoldItalic';
+    src: url("../../fonts/PlayfairDisplay-BoldItalic.otf") format('truetype');
+}
+@font-face{
+    font-family:'PD-Italic';
+    src: url("../../fonts/PlayfairDisplay-Italic.otf") format('truetype');
+}
+@font-face{
+    font-family:'PD-Regular';
+    src: url("../../fonts/PlayfairDisplay-Regular.otf") format('truetype');
+}
+@font-face{
+    font-family:'R-Light';
+    src: url("../../fonts/Raleway-Light.ttf") format('truetype');
+}
+@font-face{
+    font-family:'R-LightItalic';
+    src: url("../../fonts/Raleway-LightItalic.ttf") format('truetype');
+}
+@font-face{
+    font-family:'R-Medium';
+    src: url("../../fonts/Raleway-Medium.ttf") format('truetype');
+}
+@font-face{
+    font-family:'R-MediumItalic';
+    src: url("../../fonts/Raleway-MediumItalic.ttf") format('truetype');
+}

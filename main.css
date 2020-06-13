@@ -1,0 +1,191 @@
+.screen-reader, .m-screen-reader {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden; }
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: 'PD-Bold';
+  src: url("../../fonts/PlayfairDisplay-Bold.otf") format("truetype"); }
+
+@font-face {
+  font-family: 'PD-BoldItalic';
+  src: url("../../fonts/PlayfairDisplay-BoldItalic.otf") format("truetype"); }
+
+@font-face {
+  font-family: 'PD-Italic';
+  src: url("../../fonts/PlayfairDisplay-Italic.otf") format("truetype"); }
+
+@font-face {
+  font-family: 'PD-Regular';
+  src: url("../../fonts/PlayfairDisplay-Regular.otf") format("truetype"); }
+
+@font-face {
+  font-family: 'R-Light';
+  src: url("../../fonts/Raleway-Light.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'R-LightItalic';
+  src: url("../../fonts/Raleway-LightItalic.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'R-Medium';
+  src: url("../../fonts/Raleway-Medium.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'R-MediumItalic';
+  src: url("../../fonts/Raleway-MediumItalic.ttf") format("truetype"); }
+
+.header-menu {
+  list-style: none; }
+  .header-menu a {
+    text-decoration: none;
+    color: #e2574c; }
+    .header-menu a:hover {
+      color: #242424;
+      text-decoration: underline; }
+
+.header-banner {
+  color: white;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.8); }
+  .header-banner h1 {
+    font-family: 'PD-Bold';
+    letter-spacing: 4px; }
+  .header-banner h2 {
+    font-family: 'R-Medium'; }
+
+.aloha-logo {
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 3.5em; }
+
+.cart-logo {
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 3.5em; }
+
+@media (max-width: 400px) {
+  .site-header {
+    width: 100%; } }
+
+.site-header .header-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 95%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto; }
+
+@media (max-width: 400px) {
+  .site-header .aloha-logo, .site-header .cart-logo {
+    margin: 2% 0; } }
+
+.site-header .aloha-logo:hover, .site-header .cart-logo:hover {
+  cursor: pointer; }
+
+.site-header .header-menu a {
+  font-family: 'R-Medium'; }
+
+@media (max-width: 400px) {
+  .site-header .header-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    width: 100%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 5% 0;
+    border-top: 1px solid #969696; } }
+
+@media (max-width: 400px) {
+  .header-banner {
+    width: 100%;
+    height: 60vmax;
+    background: url("../../images/banner-girl.png"), -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.15)), to(rgba(0, 0, 0, 0.25))), url("../../images/flower-bkgd.jpg");
+    background: url("../../images/banner-girl.png"), linear-gradient(to bottom, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.25) 100%), url("../../images/flower-bkgd.jpg");
+    background-size: 22vmax,contain,cover;
+    background-position: bottom,center,center;
+    background-repeat: no-repeat; } }
+
+.header-banner nav {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  padding-top: 35%; }
+  .header-banner nav h2 {
+    font-size: 1.5em;
+    margin-bottom: 5%; }
+  .header-banner nav h1 {
+    font-size: 2.5em; }
