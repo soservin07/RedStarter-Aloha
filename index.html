@@ -20,12 +20,18 @@
         href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="./build/css/style.min.css" />
+    <link rel="stylesheet" href="https://npmcdn.com/flickity@2/dist/flickity.css"> 
     <script
         src="https://code.jquery.com/jquery-3.4.1.js"
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
         crossorigin="anonymous"
     ></script>
+    
+    <!-- <script src="./js/jquery.formatCurrency-1.4.0.js"></script>
+    <script src="./js/jquery.formatCurrency-1.4.0.min.js"></script> -->
+    <script src="./js/jquery.formatCurrency-1.4.0.pack.js"></script>
     <script src="./build/js/main.min.js"></script>
+    <script src="https://npmcdn.com/flickity@2/dist/flickity.pkgd.js"></script>
 </head>
 <body>
     <header class="site-header"> 
@@ -51,91 +57,92 @@
     </header>
     <div class="site-content">
         <main>
-            <div class="1st-content">
+            <div class="first-content">
                 <nav>
-                    Hand-Crafted <p class="bold-style">Styles</p>
+                    Hand-Crafted &nbsp<p class="bold-style">Styles</p>
                 </nav>
-                <p>
+                <p class="first-desc">
                     Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our current selection of products of sign-up for updates below.
                 </p>
             </div>
-            <div class="2nd-content">
-                <ul class="2nd-category-menu">
+            <div class="second-content">
+                <ul class="second-category-menu">
                     <li>
                         <img src="./images/mens-category.jpg" alt="mens-category">
-                        <p class="2nd-title">men's</p>
+                        <p class="second-title">men's</p>
                     </li>
                     <li>
                         <img src="./images/trends-category.jpg" alt="trends-category">
-                        <p class="2nd-title">trends</p>
+                        <p class="second-title">trends</p>
                     </li>
                     <li>
                         <img src="./images/glasses-category.jpg" alt="glasses-category">
-                        <p class="2nd-title">glasses</p>
+                        <p class="second-title">glasses</p>
                     </li>
                     <li>
                         <img src="./images/sale-category.jpg" alt="sale-category">
-                        <p class="2nd-title">sale</p>
+                        <p class="second-title">sale</p>
                     </li>
                     <li>
                         <img src="./images/bags-category.jpg" alt="bags-category">
-                        <p class="2nd-title">bags</p>
+                        <p class="second-title">bags</p>
                     </li>
                     <li>
-                        <p class="2nd-title">womens</p>
+                        <img src="./images/womens-category.jpg" alt="bags-category">
+                        <p class="second-title">womens</p>
                     </li>
                 </ul>
             </div>
-            <div class="3rd-content">
-                <div class="3rd-products">
+            <!--   FLICKITY AREA and CAROUSEL here! -->
+            <div class="third-content">
                     <nav>
-                        Most-Loved <p class="bold-style">Products</p>
+                        Most-Loved &nbsp<p class="bold-style">Products</p>
                     </nav>
                     <div class="wrapper">
-                        <ul>
-                            <li>
+                        <ul class="carousel" data-flickity>
+                            <li class="carousel-cell">
                                 <img src="./images/stretch-knit-dress.jpg" alt="stretch-knit-dress">
                                 <p class="product-type">dresses</p>
                                 <p class="product-name">stretch knit dress</p>
                                 <p class="product-price">169</p>
                             </li>
-                            <li>
+                            <li class="carousel-cell">
                                 <img src="./images/cotton-blue-shirt.jpg" alt="cotton-blue-shirt">
                                 <p class="product-type">shirts</p>
                                 <p class="product-name">cotton blue shirt</p>
                                 <p class="product-price">89</p>
                             </li>
-                            <li>
+                            <li class="carousel-cell">
                                 <img src="./images/checked-stretch-dress.jpg" alt="checked-stretch-dress">
                                 <p class="product-type">dresses</p>
                                 <p class="product-name">checked stretch dress</p>
                                 <p class="product-price">129</p>
                             </li>
-                            <li>
+                            <li class="carousel-cell">
                                 <img src="./images/blue-hipster-backpack.jpg" alt="blue-hipster-backpack">
                                 <p class="product-type">bags</p>
                                 <p class="product-name">blue hipster backpack</p>
                                 <p class="product-price">69</p>
                             </li>
-                            <li>
+                            <li class="carousel-cell">
                                 <img src="./images/demin-overall-shorts.jpg" alt="demin-overall-shorts">
                                 <p class="product-type">denim</p>
                                 <p class="product-name">denim overall shorts</p>
                                 <p class="product-price">89</p>
                             </li>
-                            <li>
+                            <li class="carousel-cell">
                                 <img src="./images/pink-dotted-dress.jpg" alt="pink-dotted-dress">
                                 <p class="product-type">dresses</p>
                                 <p class="product-name">pink dotted dress</p>
                                 <p class="product-price">99</p>
                             </li>
-                            <li>
+                            <li class="carousel-cell">
                                 <img src="./images/blue-silk-dress.jpg" alt="blue-silk-dress">
                                 <p class="product-type">dresses</p>
                                 <p class="product-name">blue silk dress</p>
                                 <p class="product-price">119</p>
                             </li>
-                            <li>
+                            <li class="carousel-cell">
                                 <img src="./images/cotton-yellow-tshirt.jpg" alt="cotton-yellow-tshirt">
                                 <p class="product-type">shirts</p>
                                 <p class="product-name">cotton yellow shirt</p>
@@ -143,15 +150,15 @@
                             </li>
                         </ul>
                     </div>
-                </div>
+                
             </div>
-            <div class="4th-content">
+            <div class="fourth-content">
                 <img src="./images/wave-bkgd.jpg" alt="blue wave background">
                 <div class="wrapper">
                     <nav>
                         Most-Loved <p class="bold-style">Products</p>
                     </nav>
-                    <p class="4th-text">
+                    <p class="fourth-text">
                         Stay updated on our latest product releases, be first to find out about upcoming sales, and get free style tips from our blog. Unsubscribe at any time. 
                     </p>
                     <nav>

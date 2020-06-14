@@ -1,8 +1,14 @@
 .aloha-logo{
     object-fit: contain;
-    height: 3.5em;
+    @include for-mobile{
+        height: 3.5em;
+    }
+    
 }
 .cart-logo{
     object-fit: contain;
-    height: 3.5em;
+    @include for-mobile{
+        height: 3.5em;
+    }
+    
 }

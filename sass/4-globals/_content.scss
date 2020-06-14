@@ -1,0 +1,122 @@
+.first-content{
+    width:100%;
+    display:flex;
+    flex-flow:column wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    @include for-mobile{
+        padding:10% 0;
+    }
+
+    nav{
+        font-family: 'PD-Italic';
+        display:flex;
+        flex-flow:row nowrap;
+        margin: 0 auto;
+        font-weight:100;
+        @include for-mobile{
+            font-size: 2em;
+            margin-bottom: 5%;
+        }
+        .bold-style{
+            font-family: 'PD-Bold';
+        }
+    }
+    
+    .first-desc{
+        color:$body-font-color;
+        font-family: 'R-Light';
+        text-emphasis-color: black;
+        width:90%;
+        margin:0 auto;
+        @include for-mobile{
+            line-height: 2em;
+            font-size:1em;
+        }
+        
+    }
+}
+
+.second-content{
+    width:100%;
+    
+    .second-category-menu{
+        width:100%;
+        @include for-mobile{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: repeat(4,1fr);
+            grid-gap:5px 5px;
+        }
+        
+    li{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        color:white;
+        text-transform: uppercase;
+        font-family: 'R-Medium';
+
+        &:hover{
+            cursor: pointer;
+            filter: brightness(150%);
+            text-shadow: 1px 1px 10px black;
+            letter-spacing: unset;
+            font-weight: bold;
+            
+        }
+    }
+    @include for-mobile{
+        & :nth-child(1){
+            grid-column: 1 / span 2;
+            grid-row: 1;
+        }
+        & :last-child{
+            grid-column: 1 / span 2;
+            grid-row: 4;
+        }
+    }
+        
+    }
+
+    img{
+        object-fit: contain;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        filter:brightness(75%);
+    }
+    .second-title{
+        z-index: 1;
+        position: absolute;
+        
+        letter-spacing: 3px;
+        @include for-mobile{
+            font-size: 1.6em;
+        }
+
+    }
+}
+
+.third-content{
+    width:100%;
+    padding:10% 0;
+    text-align: center;
+    nav{
+        font-family: 'PD-Italic';
+        display:flex;
+        flex-flow:row nowrap;
+        margin: 0 auto;
+        font-weight:100;
+        justify-content: center;
+        @include for-mobile{
+            font-size: 2em;
+            margin-bottom: 5%;
+        }
+        .bold-style{
+            font-family: 'PD-Bold';
+        }
+    }
+}

@@ -6,7 +6,7 @@
 //#2 site basics
 @import './2-basics/reset';
 @import './2-basics/typography';
-@import './2-basics/fonts';
+// @import './2-basics/fonts';
 //#3 objects
 @import './3-objects/buttons';
 @import './3-objects/forms';
@@ -16,3 +16,6 @@
 @import './4-globals/footer';
 @import './4-globals/header';
 @import './4-globals/content';
+
+//#5 outsource tools and plugins
+@import './5-tools/flickity';

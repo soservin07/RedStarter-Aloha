@@ -1,4 +1,31 @@
-//base font for width 600px+
+//colors and styles for TEXT and links
+.header-menu{
+    list-style: none;
+    a{
+        text-decoration: none;
+        color: $orange-brand-color;
+       &:hover{
+            color:$footer-grey-bg;
+            text-decoration: underlin   e;
+       }
+    }
+}
+
+.header-banner{
+    color:white;
+    text-shadow: 1px 1px rgba(0,0,0,0.8);
+    h1{
+        font-family: 'PD-Bold';
+        letter-spacing: 4px;
+    }
+    h2{
+        font-family: 'R-Medium';
+       
+    }
+}
+
+
+//base font sizes for width 600px+
 $base-font:16px;
 $base-font-sm:14px;
 
