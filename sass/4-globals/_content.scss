@@ -120,3 +120,110 @@
         }
     }
 }
+
+.fourth-content{
+    width: 100%;
+    
+    @include for-mobile{
+        overflow: hidden;
+        height: 45vmax;
+        position: relative;
+    }
+    img{
+        object-fit: contain;
+        z-index: -1;
+        filter: brightness(75%);
+
+        @include for-mobile{
+            transform: translate(-10em,-27em);
+            height: 100vmax;
+        }
+    }
+
+    .wrapper{
+        position: absolute;
+        width: 100%;
+        z-index: 99;
+        top: 0;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        height: 100%;
+        align-items: center;
+        font-family: 'R-medium';
+        color: white;
+        text-align: center;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.445);
+
+        @include for-mobile{
+            line-height: 1.5;
+            padding: 0 2%;
+        }
+        nav{
+            font-family: 'PD-Italic';
+            display:flex;
+            flex-flow:row nowrap;
+            margin: 0 auto;
+            font-weight:100;
+            justify-content: center;
+            color:white;
+            @include for-mobile{
+                font-size: 2em;
+                margin-bottom: 5%;
+            }
+            .bold-style{
+                font-family: 'PD-Bold';
+                &:before{
+                    padding-left:1%;
+                }
+            }
+        }
+
+        .subscribe-form{
+            width: 100%;
+            @include for-mobile{
+                display: inline-flex;
+                margin-top: 5%;
+                align-items: center;
+            }
+            
+            input{
+                font-family: 'R-Medium';
+                
+                z-index: 1;
+                border-radius: 2em;
+                border: 0;
+                
+                width: 100%;
+                @include for-mobile{
+                    padding: 5% 0 5% 24px;
+                    font-size: 0.5em;
+                }
+            }
+            button{
+                border: 0;
+                font-family: 'R-Medium';
+                
+                text-transform: uppercase;
+                color: white;
+                background-color: $link-hover;
+                font-weight: lighter;
+                position: absolute;
+                
+                z-index: 2;
+                @include for-mobile{
+                    border-radius: 2em;
+                    font-size: 0.5em;
+                    right: 4%;
+                    padding: 3%;
+                }
+                &:hover{
+                    cursor: pointer;
+                    background-color:rgba(255, 0, 0, 0.897);
+                }
+            }
+        }
+    }
+
+    
+}

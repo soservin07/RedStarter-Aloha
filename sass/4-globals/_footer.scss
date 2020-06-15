@@ -1,0 +1,55 @@
+.site-footer{
+    width:100%;
+    background-color: $footer-grey-bg;
+    color:white;
+    font-family: 'R-Medium';
+    line-height: 2;
+    
+    ul{
+        
+        text-align: center;
+        letter-spacing: 1px;
+        @include for-mobile{
+            padding: 5% 0;
+            font-size: 0.8em;
+            width: 90%;
+            margin: 0 auto;
+        }
+
+            & :nth-child(1){
+                padding:0;
+                line-height: 1;
+            }
+            li {
+                .footer-address{
+                    color:$grey-border;
+                    
+                    @include for-mobile{
+                        width: 60%;
+                        margin: 2% auto;
+                    }
+                }
+
+                .fa{
+                    font-size: 3em;
+                    color: #fff;
+                    line-height: unset;
+                }
+                a{
+                    padding: 0 2%;
+                    text-decoration: unset;
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            & :last-child{
+                display: flex;
+                flex-flow: row nowrap;
+                align-items: center;
+                justify-content: center;
+           }
+        
+    }
+}
