@@ -14,13 +14,54 @@
             font-size: 0.8em;
             width: 90%;
             margin: 0 auto;
-        }
 
             & :nth-child(1){
                 padding:0;
                 line-height: 1;
             }
+        }
+        @include for-tablet{
+            display: grid;
+            font-size: 0.8em;
+            text-align: left;
+            grid-template-columns: 2fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            padding: 5% 1%;
+
+
+            & :nth-child(1){
+                line-height: 1.2;
+
+                & :nth-child(3){
+                    line-height: 4;
+                    text-decoration: underline;
+                }
+            }
+        }
+        @include for-desktop{
+            width: 90%;
+            margin:0 auto;
+            display: grid;
+            font-size: 0.8em;
+            text-align: left;
+            grid-template-columns: 2fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            padding: 2% 1%;
+
+
+            & :nth-child(1){
+                line-height: 1.2;
+
+                .contact-email{
+                    line-height: 4;
+                    text-decoration: underline;
+                }
+            }
+        }
+
+            
             li {
+
                 .footer-address{
                     color:$grey-border;
                     
@@ -28,13 +69,27 @@
                         width: 60%;
                         margin: 2% auto;
                     }
+                    @include for-desktop{
+                        width: 30%;
+                    }
                 }
 
                 .fa{
-                    font-size: 3em;
                     color: #fff;
                     line-height: unset;
+                    @include for-mobile{
+                        font-size: 3em;
+                    }
+                    @include for-tablet{
+                        font-size: 1.5em;
+                        display: inline-block;
+                    }
+                    @include for-desktop{
+                        font-size: 1.5em;
+                        display: inline-block;
+                    }
                 }
+
                 a{
                     padding: 0 2%;
                     text-decoration: unset;
@@ -45,11 +100,85 @@
             }
 
             & :last-child{
-                display: flex;
-                flex-flow: row nowrap;
-                align-items: center;
-                justify-content: center;
+                @include for-mobile{
+                    display: flex;
+                    flex-flow: row nowrap;
+                    align-items: center;
+                    justify-content: center;
+                }
+                @include for-tablet{
+                    grid-column: 2;
+                    grid-row: 1 / span 2;
+
+                    display:flex;
+                    flex-flow: column nowrap;
+                    
+
+                    .fa-facebook-official::after{
+                        content:'Facebook';
+                        margin-left: 5px;
+                    }
+                    .fa-twitter::after{
+                        content: 'Twitter';
+                        margin-left: 5px;
+                    }
+                    .fa-instagram::after{
+                        content: 'Instagram';
+                        margin-left: 5px;
+                    }
+                    .fa-pinterest::after{
+                        content: 'Pinterest';
+                        margin-left: 5px;
+                    }
+                    .fa-google-plus-square::after{
+                        content: 'Google+';
+                        margin-left: 5px;
+                    }
+                }
+                @include for-desktop{
+                    grid-column: 2;
+                    grid-row: 1 / span 2;
+
+                    display:flex;
+                    align-content: flex-end;
+                    
+
+                    .fa-facebook-official::after{
+                        content:'Facebook';
+                        margin-left: 5px;
+                    }
+                    .fa-twitter::after{
+                        content: 'Twitter';
+                        margin-left: 5px;
+                    }
+                    .fa-instagram::after{
+                        content: 'Instagram';
+                        margin-left: 5px;
+                    }
+                    .fa-pinterest::after{
+                        content: 'Pinterest';
+                        margin-left: 5px;
+                    }
+                    .fa-google-plus-square::after{
+                        content: 'Google+';
+                        margin-left: 5px;
+                    }
+                }
            }
+        
+    }
+
+
+    .social-sites{
+        @include for-tablet{
+            padding-left: 30%;
+        }
+        @include for-desktop{
+            display:flex;
+            flex-flow:column nowrap;
+            align-content: flex-start;
+            padding-left: 70%;
+        }
         
     }
 }

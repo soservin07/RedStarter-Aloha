@@ -1,14 +1,27 @@
 .site-header{
-    @include for-mobile{
-        width:100%;
-    }
-
+    width:100%;
     .header-items{
-        display:flex;
-        width:95%;
-        flex-flow: row wrap;
-        justify-content: space-between;
-        margin:0 auto;
+        @include for-mobile{
+            width:95%;
+            justify-content: space-between;
+            margin:0 auto;
+            display: flex;
+            flex-flow: row wrap;
+        }
+        @include for-tablet{
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            justify-content: space-around;
+            padding: 5% 2%;
+        }
+        @include for-desktop{
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            justify-content: space-around;
+            padding: 3% 2%;
+        }
         
     }
     .aloha-logo, .cart-logo{
@@ -23,6 +36,9 @@
     .header-menu{
         a{
             font-family: 'R-Medium';
+            & :hover{
+                cursor: pointer;
+            }
         }
         @include for-mobile{
             display:flex;
@@ -32,6 +48,27 @@
             justify-content: space-around;
             padding:5% 0;
             border-top:1px solid $body-light-grey ;
+        }
+        @include for-tablet{
+            order:2;
+            display: inline-flex;
+            position: relative;
+            li{
+                padding: 0 2%;
+            }
+        }
+        @include for-desktop{
+            width: 1240px;
+            margin:0 auto;
+            order:2;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            font-size: 1.3em;
+            li{
+                padding: 0 2%;
+            }
         }
         
     }
@@ -46,28 +83,68 @@
         background-position: bottom,center,center;
         background-repeat:no-repeat;
     }
+    @include for-tablet{
+        width:100%;
+        height: 60vmax;
+        background: url("../../images/banner-girl.png"),linear-gradient(to bottom, rgba(0,0,0,0.15) 0%,rgba(0,0,0,0.25) 100%),  url("../../images/flower-bkgd.jpg");
+        background-size: 22vmax,contain,cover;
+        background-position: bottom,center,center;
+        background-repeat:no-repeat;
+    }
+    @include for-desktop{
+        width:100%;
+        height: 60vmax;
+        background: url("../../images/banner-girl.png"),linear-gradient(to bottom, rgba(0,0,0,0.15) 0%,rgba(0,0,0,0.25) 100%),  url("../../images/flower-bkgd.jpg");
+        background-size: 20vmax,contain,cover;
+        background-position: bottom,center,center;
+        background-repeat:no-repeat;
+    }
     nav{
         margin:0 auto;
         text-align: center;
         display:flex;
         flex-flow: column wrap;
         align-items: center;
-        height: 100%;
+
         @include for-mobile{
             width: 80%;
             padding-top: 35%;
         }
-        
+        @include for-tablet{
+            padding-top: 27%;
+            line-height: 1.8;
+        }
+        @include for-desktop{
+            width: 1240px;
+            padding-top: 23%;
+            line-height: 1.8;
+        }
         h2{
             @include for-mobile{
                 font-size: 1.5em;
                 margin-bottom: 5%;
             }
-            
+
+            @include for-tablet{
+                font-size: 1.5em;
+            }
+            @include for-desktop{
+                font-size: 2.5em;
+            }
         }
         h1{
             @include for-mobile{
                 font-size: 2.5em;
+            }
+            @include for-tablet{
+                font-size: 3.5em;
+                font-family: 'PD-Regular';
+                letter-spacing: unset;
+            }
+            @include for-desktop{
+                font-size: 4em;
+                font-family: 'PD-Regular';
+                letter-spacing: 2px;
             }
             
         }

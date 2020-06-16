@@ -1,3 +1,7 @@
+.site-content{
+    width: 100%;
+}
+
 .first-content{
     width:100%;
     display:flex;
@@ -5,8 +9,10 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    
-    @include for-mobile{
+    padding:15% 0;
+    @include for-desktop{
+        width: 1240px;
+        margin: 0 auto;
         padding:10% 0;
     }
 
@@ -20,6 +26,15 @@
             font-size: 2em;
             margin-bottom: 5%;
         }
+
+        @include for-tablet{
+            font-size: 3em;
+            margin-bottom: 5%;
+        }
+        @include for-desktop{
+            font-size: 4em;
+            margin-bottom: 5%;
+        }
         .bold-style{
             font-family: 'PD-Bold';
         }
@@ -29,11 +44,19 @@
         color:$body-font-color;
         font-family: 'R-Light';
         text-emphasis-color: black;
-        width:90%;
+        width:70%;
         margin:0 auto;
         @include for-mobile{
             line-height: 2em;
             font-size:1em;
+        }
+        @include for-tablet{
+            line-height: 2em;
+            font-size:1.2em;
+        }
+        @include for-desktop{
+            line-height: 2em;
+            font-size:1.5em;
         }
         
     }
@@ -48,6 +71,19 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             grid-template-rows: repeat(4,1fr);
+            grid-gap:5px 5px;
+        }
+
+        @include for-tablet{
+            display: grid;
+            grid-template-columns:repeat(4,1fr);
+            grid-template-rows: repeat(2,1fr);
+            grid-gap:5px 5px;
+        }
+        @include for-desktop{
+            display: grid;
+            grid-template-columns:repeat(4,1fr);
+            grid-template-rows: repeat(2,1fr);
             grid-gap:5px 5px;
         }
         
@@ -68,6 +104,7 @@
             
         }
     }
+
     @include for-mobile{
         & :nth-child(1){
             grid-column: 1 / span 2;
@@ -76,6 +113,26 @@
         & :last-child{
             grid-column: 1 / span 2;
             grid-row: 4;
+        }
+    }
+    @include for-tablet{
+        & :nth-child(1){
+            grid-column: 1 / span 2;
+            grid-row: 1;
+        }
+        & :last-child{
+            grid-column: 3/ 5;
+            grid-row: 2;
+        }
+    }
+    @include for-desktop{
+        & :nth-child(1){
+            grid-column: 1 / span 2;
+            grid-row: 1;
+        }
+        & :last-child{
+            grid-column: 3/ 5;
+            grid-row: 2;
         }
     }
         
@@ -96,7 +153,12 @@
         @include for-mobile{
             font-size: 1.6em;
         }
-
+        @include for-tablet{
+            font-size: 1.7em;
+        }
+        @include for-desktop{
+            font-size: 2em;
+        }
     }
 }
 
@@ -115,6 +177,14 @@
             font-size: 2em;
             margin-bottom: 5%;
         }
+        @include for-tablet{
+            font-size: 3em;
+            margin-bottom: 5%;
+        }
+        @include for-desktop{
+            font-size: 4em;
+            margin-bottom: 5%;
+        }
         .bold-style{
             font-family: 'PD-Bold';
         }
@@ -129,6 +199,16 @@
         height: 45vmax;
         position: relative;
     }
+    @include for-tablet{
+        overflow: hidden;
+        height: 45vmax;
+        position: relative;
+    }
+    @include for-desktop{
+        overflow: hidden;
+        height: 29vmax;
+        position: relative;
+    }
     img{
         object-fit: contain;
         z-index: -1;
@@ -138,13 +218,18 @@
             transform: translate(-10em,-27em);
             height: 100vmax;
         }
+        @include for-tablet{
+            transform: translate(-10em,-27em);
+            height: 100vmax;
+        }
+        @include for-desktop{
+            transform: translate(0em,-27em);
+            width: 100%;
+        }
     }
 
     .wrapper{
-        position: absolute;
         width: 100%;
-        z-index: 99;
-        top: 0;
         display: flex;
         flex-flow: column wrap;
         justify-content: center;
@@ -152,12 +237,31 @@
         align-items: center;
         font-family: 'R-medium';
         color: white;
-        text-align: center;
         text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.445);
 
         @include for-mobile{
             line-height: 1.5;
             padding: 0 2%;
+            position: absolute;
+            z-index: 99;
+            text-align: center;
+            top: 0;
+        }
+        @include for-tablet{
+            line-height: 1.5;
+            padding: 0 2%;
+            position: absolute;
+            z-index: 99;
+            text-align: center;
+            top: 0;
+        }
+        @include for-desktop{
+            line-height: 1.5;
+            padding: 0 2%;
+            position: absolute;
+            z-index: 99;
+            text-align: center;
+            top: 0;
         }
         nav{
             font-family: 'PD-Italic';
@@ -171,6 +275,14 @@
                 font-size: 2em;
                 margin-bottom: 5%;
             }
+            @include for-tablet{
+                font-size: 3em;
+                margin-bottom: 5%;
+            }
+            @include for-desktop{
+                font-size: 4em;
+                margin-bottom: 5%;
+            }
             .bold-style{
                 font-family: 'PD-Bold';
                 &:before{
@@ -179,14 +291,43 @@
             }
         }
 
+        .fourth-text{
+            
+            @include for-tablet{
+                width: 85%;
+                margin:0 auto;
+                font-size: 1.2em;
+            }
+            @include for-desktop{
+                width: 60%;
+                margin:0 auto;
+                font-size: 1.5em;
+            }
+        }
+
         .subscribe-form{
-            width: 100%;
+            
             @include for-mobile{
+                width: 100%;
                 display: inline-flex;
                 margin-top: 5%;
                 align-items: center;
             }
-            
+            @include for-tablet{
+                width:80%;
+                margin:2% auto;
+                display: inline-flex;
+                align-items: center;
+                font-size: 2em;
+            }
+            @include for-desktop{
+                width:40%;
+                margin:2% auto;
+                display: inline-flex;
+                align-items: center;
+                font-size: 2em;
+                position: relative;
+            }
             input{
                 font-family: 'R-Medium';
                 
@@ -198,6 +339,16 @@
                 @include for-mobile{
                     padding: 5% 0 5% 24px;
                     font-size: 0.5em;
+                }
+                @include for-tablet{
+                    font-size: .5em;
+                    text-indent: 1em;
+                    padding: 3%;
+                }
+                @include for-desktop{
+                    font-size: .5em;
+                    text-indent: 1em;
+                    padding: 2.5%;
                 }
             }
             button{
@@ -216,6 +367,18 @@
                     font-size: 0.5em;
                     right: 4%;
                     padding: 3%;
+                }
+                @include for-tablet{
+                    border-radius: 2em;
+                    font-size: 0.5em;
+                    right: 13%;
+                    padding: 1.5%;
+                }
+                @include for-desktop{
+                    border-radius: 2em;
+                    font-size: 0.5em;
+                    right: 2%;
+                    padding: 1.2% 2%;
                 }
                 &:hover{
                     cursor: pointer;

@@ -4,9 +4,9 @@
   }
 
   @mixin for-tablet {
-    @media (max-width: 600px) { @content; }
+    @media (min-width: 600px) and (max-width:1240px) { @content; }
   }
 
   @mixin for-desktop {
-    @media (max-width: 1240px) { @content; }
+    @media (min-width: 1241px) { @content; }
   }

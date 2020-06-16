@@ -3,12 +3,34 @@
     @include for-mobile{
         height: 3.5em;
     }
-    
+    @include for-tablet{
+        order:1;
+        height: 3em;
+        position: absolute;
+        left:1%;
+    }
+    @include for-desktop{
+        height: 4em;
+        order:3;
+        position: absolute;
+        left: 1%;
+    }
 }
 .cart-logo{
     object-fit: contain;
     @include for-mobile{
         height: 3.5em;
     }
-    
+    @include for-tablet{
+        height: 3em;
+        order:3;
+        position: absolute;
+        right: 1%;
+    }
+    @include for-desktop{
+        height: 4em;
+        order:3;
+        position: absolute;
+        right: 1%;
+    }
 }
