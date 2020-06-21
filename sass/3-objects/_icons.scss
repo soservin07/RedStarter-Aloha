@@ -34,3 +34,20 @@
         right: 1%;
     }
 }
+
+.fa-home{
+    font-size: 3em !important;
+    color: black;
+    position: fixed;
+    visibility:hidden;
+    transform: translate(20rem,45rem);
+    z-index: 99;
+    background-color: rgba(255, 255, 255, 0.69);
+    padding: 2%;
+    border-radius: 100%;
+
+    &:hover{
+        background-color: white;
+        cursor: pointer;
+    }
+}

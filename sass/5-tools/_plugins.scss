@@ -1,0 +1,36 @@
+//Styles for the on scroll menu 
+
+.scroll-menu{
+    display:none;
+    flex-flow:row nowrap;
+    align-items: center;
+    justify-content: space-around;
+    padding:2% 0;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    background-color: white;
+    border-bottom: 3px solid rgba(61, 61, 61, 0.499);
+    
+    .aloha-logo{
+        display: none;
+    }
+
+    .cart-logo{
+        order:2;
+        @include for-mobile{
+            height: 3em;
+        }
+    }
+
+    .header-menu{
+        order:1;
+        @include for-mobile{
+            display: inline-flex;
+        }
+
+        li{
+            padding:0 1%;
+        }
+    }
+}

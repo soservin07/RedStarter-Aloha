@@ -162,6 +162,21 @@ table {
       position: absolute;
       right: 1%; } }
 
+.fa-home {
+  font-size: 3em !important;
+  color: black;
+  position: fixed;
+  visibility: hidden;
+  -webkit-transform: translate(20rem, 45rem);
+          transform: translate(20rem, 45rem);
+  z-index: 99;
+  background-color: rgba(255, 255, 255, 0.69);
+  padding: 2%;
+  border-radius: 100%; }
+  .fa-home:hover {
+    background-color: white;
+    cursor: pointer; }
+
 .site-footer {
   width: 100%;
   background-color: #242424;
@@ -190,7 +205,7 @@ table {
         padding: 5% 1%; }
         .site-footer ul :nth-child(1) {
           line-height: 1.2; }
-          .site-footer ul :nth-child(1) :nth-child(3) {
+          .site-footer ul :nth-child(1) .contact-email {
             line-height: 4;
             text-decoration: underline; } }
     @media (min-width: 1241px) {
@@ -750,7 +765,7 @@ table {
         line-height: 1.5;
         padding: 0 2%;
         position: absolute;
-        z-index: 99;
+        z-index: 10;
         text-align: center;
         top: 0; } }
     @media (min-width: 600px) and (max-width: 1240px) {
@@ -758,7 +773,7 @@ table {
         line-height: 1.5;
         padding: 0 2%;
         position: absolute;
-        z-index: 99;
+        z-index: 10;
         text-align: center;
         top: 0; } }
     @media (min-width: 1241px) {
@@ -766,7 +781,7 @@ table {
         line-height: 1.5;
         padding: 0 2%;
         position: absolute;
-        z-index: 99;
+        z-index: 10;
         text-align: center;
         top: 0; } }
     .fourth-content .wrapper nav {
@@ -978,3 +993,41 @@ body {
 /* hide disabled button */
 .flickity-prev-next-button:disabled {
   display: none; }
+
+.scroll-menu {
+  display: none;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 2% 0;
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  background-color: white;
+  border-bottom: 3px solid rgba(61, 61, 61, 0.499); }
+  .scroll-menu .aloha-logo {
+    display: none; }
+  .scroll-menu .cart-logo {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2; }
+    @media (max-width: 400px) {
+      .scroll-menu .cart-logo {
+        height: 3em; } }
+  .scroll-menu .header-menu {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1; }
+    @media (max-width: 400px) {
+      .scroll-menu .header-menu {
+        display: -webkit-inline-box;
+        display: -ms-inline-flexbox;
+        display: inline-flex; } }
+    .scroll-menu .header-menu li {
+      padding: 0 1%; }
