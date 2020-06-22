@@ -3,6 +3,8 @@
 function applyScroll(){
     
    $(function(){    
+    
+
     //Variable declarations
     let currentScroll=0,
     mainMenuH = $('.header-items').outerHeight(),
@@ -99,8 +101,18 @@ $(document).ready(function()
 {
     
     applyMoneyFormat();
-    applyScroll();
-    applyHomeBtn();
+
+    //filter for site's breakpoint
+    if($(window).width()>=1100){
+        return;
+    }
+    else{
+        applyScroll();
+        applyHomeBtn();
+    }
+    
+
+
     clickHomeBtn();
 
     filterSubscription();

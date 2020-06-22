@@ -14,6 +14,7 @@
         order:3;
         position: absolute;
         left: 1%;
+        margin:0;
     }
 }
 .cart-logo{
@@ -32,6 +33,7 @@
         order:3;
         position: absolute;
         right: 1%;
+        margin:0;
     }
 }
 
@@ -40,12 +42,16 @@
     color: black;
     position: fixed;
     visibility:hidden;
-    transform: translate(20rem,45rem);
     z-index: 99;
     background-color: rgba(255, 255, 255, 0.69);
     padding: 2%;
     border-radius: 100%;
-
+    @include for-mobile{
+        transform: translate(20rem,45rem);
+    }
+    @include for-tablet{
+        transform: translate(10em,14em);
+    }
     &:hover{
         background-color: white;
         cursor: pointer;

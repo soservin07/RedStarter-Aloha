@@ -25,10 +25,9 @@
 
     .header-menu{
         order:1;
-        @include for-mobile{
-            display: inline-flex;
-        }
-
+        display: inline-flex;
+        padding:1% 0;
+        align-self: start;
         li{
             padding:0 1%;
         }

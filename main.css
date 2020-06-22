@@ -119,7 +119,7 @@ table {
 .aloha-logo {
   -o-object-fit: contain;
      object-fit: contain; }
-  @media (max-width: 400px) {
+  @media (min-width: 320px) and (max-width: 599px) {
     .aloha-logo {
       height: 3.5em; } }
   @media (min-width: 600px) and (max-width: 1240px) {
@@ -137,12 +137,13 @@ table {
           -ms-flex-order: 3;
               order: 3;
       position: absolute;
-      left: 1%; } }
+      left: 1%;
+      margin: 0; } }
 
 .cart-logo {
   -o-object-fit: contain;
      object-fit: contain; }
-  @media (max-width: 400px) {
+  @media (min-width: 320px) and (max-width: 599px) {
     .cart-logo {
       height: 3.5em; } }
   @media (min-width: 600px) and (max-width: 1240px) {
@@ -160,19 +161,26 @@ table {
           -ms-flex-order: 3;
               order: 3;
       position: absolute;
-      right: 1%; } }
+      right: 1%;
+      margin: 0; } }
 
 .fa-home {
   font-size: 3em !important;
   color: black;
   position: fixed;
   visibility: hidden;
-  -webkit-transform: translate(20rem, 45rem);
-          transform: translate(20rem, 45rem);
   z-index: 99;
   background-color: rgba(255, 255, 255, 0.69);
   padding: 2%;
   border-radius: 100%; }
+  @media (min-width: 320px) and (max-width: 599px) {
+    .fa-home {
+      -webkit-transform: translate(20rem, 45rem);
+              transform: translate(20rem, 45rem); } }
+  @media (min-width: 600px) and (max-width: 1240px) {
+    .fa-home {
+      -webkit-transform: translate(10em, 14em);
+              transform: translate(10em, 14em); } }
   .fa-home:hover {
     background-color: white;
     cursor: pointer; }
@@ -186,7 +194,7 @@ table {
   .site-footer ul {
     text-align: center;
     letter-spacing: 1px; }
-    @media (max-width: 400px) {
+    @media (min-width: 320px) and (max-width: 599px) {
       .site-footer ul {
         padding: 5% 0;
         font-size: 0.8em;
@@ -225,7 +233,7 @@ table {
             text-decoration: underline; } }
     .site-footer ul li .footer-address {
       color: #d7d7d7; }
-      @media (max-width: 400px) {
+      @media (min-width: 320px) and (max-width: 599px) {
         .site-footer ul li .footer-address {
           width: 60%;
           margin: 2% auto; } }
@@ -235,7 +243,7 @@ table {
     .site-footer ul li .fa {
       color: #fff;
       line-height: unset; }
-      @media (max-width: 400px) {
+      @media (min-width: 320px) and (max-width: 599px) {
         .site-footer ul li .fa {
           font-size: 3em; } }
       @media (min-width: 600px) and (max-width: 1240px) {
@@ -251,7 +259,7 @@ table {
       text-decoration: unset; }
       .site-footer ul li a:hover {
         cursor: pointer; }
-    @media (max-width: 400px) {
+    @media (min-width: 320px) and (max-width: 599px) {
       .site-footer ul :last-child {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -334,7 +342,7 @@ table {
 
 .site-header {
   width: 100%; }
-  @media (max-width: 400px) {
+  @media (min-width: 320px) and (max-width: 599px) {
     .site-header .header-items {
       width: 95%;
       -webkit-box-pack: justify;
@@ -377,17 +385,20 @@ table {
               align-items: center;
       -ms-flex-pack: distribute;
           justify-content: space-around;
-      padding: 3% 2%; } }
-  @media (max-width: 400px) {
+      padding: 1%; } }
+  @media (min-width: 320px) and (max-width: 599px) {
     .site-header .aloha-logo, .site-header .cart-logo {
       margin: 2% 0; } }
+  @media (min-width: 1241px) {
+    .site-header .aloha-logo, .site-header .cart-logo {
+      margin: 0; } }
   .site-header .aloha-logo:hover, .site-header .cart-logo:hover {
     cursor: pointer; }
   .site-header .header-menu a {
     font-family: 'R-Medium'; }
     .site-header .header-menu a :hover {
       cursor: pointer; }
-  @media (max-width: 400px) {
+  @media (min-width: 320px) and (max-width: 599px) {
     .site-header .header-menu {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -431,11 +442,13 @@ table {
           -ms-flex-pack: center;
               justify-content: center;
       position: relative;
-      font-size: 1.3em; }
+      font-size: 1.3em;
+      border: 0;
+      padding: 1% 0; }
       .site-header .header-menu li {
         padding: 0 2%; } }
 
-@media (max-width: 400px) {
+@media (min-width: 320px) and (max-width: 599px) {
   .header-banner {
     width: 100%;
     height: 60vmax;
@@ -478,7 +491,7 @@ table {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
-  @media (max-width: 400px) {
+  @media (min-width: 320px) and (max-width: 599px) {
     .header-banner nav {
       width: 80%;
       padding-top: 35%; } }
@@ -491,7 +504,7 @@ table {
       width: 1240px;
       padding-top: 23%;
       line-height: 1.8; } }
-  @media (max-width: 400px) {
+  @media (min-width: 320px) and (max-width: 599px) {
     .header-banner nav h2 {
       font-size: 1.5em;
       margin-bottom: 5%; } }
@@ -501,7 +514,7 @@ table {
   @media (min-width: 1241px) {
     .header-banner nav h2 {
       font-size: 2.5em; } }
-  @media (max-width: 400px) {
+  @media (min-width: 320px) and (max-width: 599px) {
     .header-banner nav h1 {
       font-size: 2.5em; } }
   @media (min-width: 600px) and (max-width: 1240px) {
@@ -551,7 +564,7 @@ table {
             flex-flow: row nowrap;
     margin: 0 auto;
     font-weight: 100; }
-    @media (max-width: 400px) {
+    @media (min-width: 320px) and (max-width: 599px) {
       .first-content nav {
         font-size: 2em;
         margin-bottom: 5%; } }
@@ -572,7 +585,7 @@ table {
             text-emphasis-color: black;
     width: 70%;
     margin: 0 auto; }
-    @media (max-width: 400px) {
+    @media (min-width: 320px) and (max-width: 599px) {
       .first-content .first-desc {
         line-height: 2em;
         font-size: 1em; } }
@@ -589,7 +602,7 @@ table {
   width: 100%; }
   .second-content .second-category-menu {
     width: 100%; }
-    @media (max-width: 400px) {
+    @media (min-width: 320px) and (max-width: 599px) {
       .second-content .second-category-menu {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -627,7 +640,7 @@ table {
         text-shadow: 1px 1px 10px black;
         letter-spacing: unset;
         font-weight: bold; }
-    @media (max-width: 400px) {
+    @media (min-width: 320px) and (max-width: 599px) {
       .second-content .second-category-menu :nth-child(1) {
         grid-column: 1 / span 2;
         grid-row: 1; }
@@ -660,7 +673,7 @@ table {
     z-index: 1;
     position: absolute;
     letter-spacing: 3px; }
-    @media (max-width: 400px) {
+    @media (min-width: 320px) and (max-width: 599px) {
       .second-content .second-title {
         font-size: 1.6em; } }
     @media (min-width: 600px) and (max-width: 1240px) {
@@ -688,7 +701,7 @@ table {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
-    @media (max-width: 400px) {
+    @media (min-width: 320px) and (max-width: 599px) {
       .third-content nav {
         font-size: 2em;
         margin-bottom: 5%; } }
@@ -705,7 +718,7 @@ table {
 
 .fourth-content {
   width: 100%; }
-  @media (max-width: 400px) {
+  @media (min-width: 320px) and (max-width: 599px) {
     .fourth-content {
       overflow: hidden;
       height: 45vmax;
@@ -726,7 +739,7 @@ table {
     z-index: -1;
     -webkit-filter: brightness(75%);
             filter: brightness(75%); }
-    @media (max-width: 400px) {
+    @media (min-width: 320px) and (max-width: 599px) {
       .fourth-content img {
         -webkit-transform: translate(-10em, -27em);
                 transform: translate(-10em, -27em);
@@ -760,7 +773,7 @@ table {
     font-family: 'R-medium';
     color: white;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.445); }
-    @media (max-width: 400px) {
+    @media (min-width: 320px) and (max-width: 599px) {
       .fourth-content .wrapper {
         line-height: 1.5;
         padding: 0 2%;
@@ -799,7 +812,7 @@ table {
           -ms-flex-pack: center;
               justify-content: center;
       color: white; }
-      @media (max-width: 400px) {
+      @media (min-width: 320px) and (max-width: 599px) {
         .fourth-content .wrapper nav {
           font-size: 2em;
           margin-bottom: 5%; } }
@@ -825,7 +838,7 @@ table {
         width: 60%;
         margin: 0 auto;
         font-size: 1.5em; } }
-    @media (max-width: 400px) {
+    @media (min-width: 320px) and (max-width: 599px) {
       .fourth-content .wrapper .subscribe-form {
         width: 100%;
         display: -webkit-inline-box;
@@ -864,7 +877,7 @@ table {
       border-radius: 2em;
       border: 0;
       width: 100%; }
-      @media (max-width: 400px) {
+      @media (min-width: 320px) and (max-width: 599px) {
         .fourth-content .wrapper .subscribe-form input {
           padding: 5% 0 5% 24px;
           font-size: 0.5em; } }
@@ -887,7 +900,7 @@ table {
       font-weight: lighter;
       position: absolute;
       z-index: 2; }
-      @media (max-width: 400px) {
+      @media (min-width: 320px) and (max-width: 599px) {
         .fourth-content .wrapper .subscribe-form button {
           border-radius: 2em;
           font-size: 0.5em;
@@ -915,7 +928,7 @@ table {
   font-family: 'R-Medium';
   margin-bottom: 2%;
   letter-spacing: 0.2em; }
-  @media (max-width: 400px) {
+  @media (min-width: 320px) and (max-width: 599px) {
     .product-type, .product-price {
       font-size: 0.8em; } }
 
@@ -923,7 +936,7 @@ table {
   text-transform: capitalize;
   color: #e2574c;
   margin-bottom: 2%; }
-  @media (max-width: 400px) {
+  @media (min-width: 320px) and (max-width: 599px) {
     .product-name {
       font-size: 1.3em; } }
 
@@ -944,7 +957,7 @@ body {
   width: 25%;
   margin-right: 10px;
   counter-increment: gallery-cell; }
-  @media (max-width: 400px) {
+  @media (min-width: 320px) and (max-width: 599px) {
     .carousel-cell {
       width: 100%; } }
   @media (min-width: 600px) and (max-width: 1240px) {
@@ -1017,17 +1030,18 @@ body {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2; }
-    @media (max-width: 400px) {
+    @media (min-width: 320px) and (max-width: 599px) {
       .scroll-menu .cart-logo {
         height: 3em; } }
   .scroll-menu .header-menu {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
-            order: 1; }
-    @media (max-width: 400px) {
-      .scroll-menu .header-menu {
-        display: -webkit-inline-box;
-        display: -ms-inline-flexbox;
-        display: inline-flex; } }
+            order: 1;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    padding: 1% 0;
+    -ms-flex-item-align: start;
+        align-self: start; }
     .scroll-menu .header-menu li {
       padding: 0 1%; }
