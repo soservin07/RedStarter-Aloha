@@ -1,8 +1,8 @@
-﻿# 2019 Spring & Summer Collection
+﻿# 2020 Spring & Summer Collection
 
-2019 Spring & Summer Collection! - [Servin's ALOHA](https://soservin07.github.io/aloha/index.html)
+2020 Spring & Summer Collection! - [Servin's ALOHA](https://soservin07.github.io/RedStarter-Aloha/)
 
-## ![Project ALOHA](https://github.com/soservin07/soservin07/blob/master/screenshots/aloha-desktop.jpg)
+## *Wide Desktop View ![Aloha Desktop View](https://github.com/soservin07/RedStarter-Aloha/blob/master/screenshots/Servin%20Aloha%20wide%20Desktop%20view.jpg)
 
 ## Used Technologics
 
@@ -11,9 +11,8 @@
 - Semantic HTML, Using these **Tags**:
   - _div_,
   - _header_,
-  - _section_,
+  - _nav_,
   - _main_,
-  - _form_,
   - _footer_,
 
 ### SASS/CSS
@@ -22,35 +21,44 @@
 - CSS 3
   - Flexbox & Grid Display
   - smooth transition and animation
-- SASS Version of CSS Reset
+- MeyerWEb CSS Reset
 - Responsive CSS to make this website work an any screen.
   - Using: Media Queries,
   - Using: Relative sizing.
 - Google Fonts
 - Font Awesome
 
-## ![ALOHA @ tablet](https://github.com/soservin07/soservin07/blob/master/screenshots/aloha-tablet.png)
+## *Tablet View ![ALOHA @ tablet](https://github.com/soservin07/RedStarter-Aloha/blob/master/screenshots/Servin%20Aloha%20Tablet%20view.png)
 
 ### Typescript/Javascript
 
 - JQuery
 - Basic Javascript
+- ES6
 
 ### Software
 
 - SASS ( I used to boost my productivity for styling the whole template)
+- GULP
+  - autoprefixer
+  - babel
+  - cssnano
+  - eslint
+  - prettyerror
+  - sass
+  - sourcemaps
+  - terser
 - Visual Studio Code, with:
   - Typescript
-  - Prettier
-  - JsHint
-  - HTML CSS Support
+  - Prettier Code formatter
+  - jQuery Snippets
+  - HTML CSS Snippets
   - LiveServer
-  - IntelliSense for CSS and Javascript
 - Git
 - Google Chrome Developer Tools
 - Mozilla Firefox Developer Tools
 
-## ![ALOHA @ Mobile](https://github.com/soservin07/soservin07/blob/master/screenshots/aloha-mobile.png)
+## *Mobile View ![ALOHA @ Mobile](https://github.com/soservin07/RedStarter-Aloha/blob/master/screenshots/Servin%20Aloha%20Mobile%20view.png)
 
 ### Online Resources
 
@@ -58,21 +66,23 @@
 - [W3Schools](https://www.w3schools.com/)
 - [Google-Senpai](https://www.google.com/)
 - [CSS Tricks](http://css-tricks.com)
-
+- [RedStarter](https://redacademy.com/)
 
 ---
 
 ## I learned
 
 - HTML & CSS Structured Way of Coding
-- Basic Javascript into advance Jquery
-- SASS
+- Basic Javascript into advance jQuery
+- importance of using ES6 these days.
+- proper Front-End Architecture for SASS Templates
+- significance of GULP for compressing bundles of codes
 
 ## Licence
 
-This version of 'ALOHA - 2019 Spring&Summer Collection' is Copyleft © 2019 of Servin So. And the content of this repository is licensed under a Creative Commons Attribution NonCommercial License, under the terms specified in the [LICENSE.md](LICENSE.md) file.
+This version of 'ALOHA - 2020 Spring&Summer Collection' is Copyright © 2020 of Servin So. And the content of this repository is licensed under a Creative Commons Attribution NonCommercial License, under the terms specified in the [LICENSE.md](https://github.com/soservin07/RedStarter-Aloha/blob/master/licensed.md) file.
 
 ---
 
 Project #01 created at RED Academy, Vancouver - BC - Canada.
-_by ServinSo_
+_by ServinTolentinoSo_
