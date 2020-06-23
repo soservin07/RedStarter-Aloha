@@ -28,7 +28,7 @@
 - Google Fonts
 - Font Awesome
 
-## *Tablet View ![ALOHA @ tablet](https://github.com/soservin07/RedStarter-Aloha/blob/master/screenshots/Servin%20Aloha%20Tablet%20view.png)
+## *Tablet View  ![ALOHA @ tablet](https://github.com/soservin07/RedStarter-Aloha/blob/master/screenshots/Servin%20Aloha%20Tablet%20view.png)
 
 ### Typescript/Javascript
 
@@ -67,6 +67,7 @@
 - [Google-Senpai](https://www.google.com/)
 - [CSS Tricks](http://css-tricks.com)
 - [RedStarter](https://redacademy.com/)
+- [jQuery Resources](https://jquery.com/)
 
 ---
 

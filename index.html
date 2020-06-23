@@ -14,13 +14,19 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="stylesheet" href="./css/reset.css" />
+    <!-- <link rel="stylesheet" href="./css/reset.css" /> -->
     <link
         rel="stylesheet"
         href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="./build/css/style.min.css" />
+    <!-- <link rel="stylesheet" href="./build/css/cookiealert.css" /> -->
     <link rel="stylesheet" href="https://npmcdn.com/flickity@2/dist/flickity.css"> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Bootstrap 4.1.1 -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.css">
+
     <script
         src="https://code.jquery.com/jquery-3.4.1.js"
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
@@ -33,11 +39,13 @@
     <script src="./build/js/main.min.js"></script>
     <script src="https://npmcdn.com/flickity@2/dist/flickity.pkgd.js"></script>
     
+    
     <script src="https://use.fontawesome.com/b8e60d3c15.js"></script>
 
 
 </head>
 <body>
+
     <header class="site-header"> 
         <h1 class="screen-reader m-screen-reader">
             Aloha Apparel Co.
@@ -197,6 +205,16 @@
             </li>
         </ul>
     </footer>
-    
+        <!-- START Bootstrap-Cookie-Alert -->
+    <div class="alert text-center cookiealert" role="alert">
+        <b>Do you like cookies?</b> &#x1F36A; We use cookies to ensure you get the best experience on our website. <a href="https://cookiesandyou.com/" target="_blank">Learn more</a>
+
+        <button type="button" class="btn btn-primary btn-sm acceptcookies">
+            I agree
+        </button>
+    </div>
+    <!-- END Bootstrap-Cookie-Alert -->
+    <!-- Include cookiealert script -->
+<script src="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.js"></script>
 </body>
 </html>
