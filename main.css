@@ -1042,6 +1042,6 @@ body {
     display: inline-flex;
     padding: 1% 0;
     -ms-flex-item-align: start;
-        align-self: start; }
+        align-self: flex-start; }
     .scroll-menu .header-menu li {
-      padding: 0 1%; }
+      padding: 0 0.5em; }

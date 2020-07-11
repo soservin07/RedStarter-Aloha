@@ -27,9 +27,9 @@
         order:1;
         display: inline-flex;
         padding:1% 0;
-        align-self: start;
+        align-self: flex-start;
         li{
-            padding:0 1%;
+            padding:0 0.5em;
         }
     }
 }
